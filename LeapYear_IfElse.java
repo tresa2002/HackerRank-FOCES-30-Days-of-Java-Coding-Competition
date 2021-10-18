@@ -46,15 +46,15 @@ public class LeapYear_IfElse{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
-        if(year>=1900 && year<=100000){
-            if(year%4==0){
-                System.out.println("True");}
-            else if(year%100==0){
-                System.out.println("False");}
-            else if(year%400==0){
-                System.out.println("True");}
-            else{
-                System.out.println("False");}
+        if((year>=1900) && (year<=100000)){
+            if(year%4==0)
+                System.out.println("True");
+            else if(year%100==0)
+                System.out.println("False");
+            else if(year%400==0)
+                System.out.println("True");
+            else
+                System.out.println("False");
         }
     }
 }
