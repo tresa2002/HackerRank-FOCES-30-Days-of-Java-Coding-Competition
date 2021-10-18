@@ -52,13 +52,14 @@ public class Switch{
                     System.out.println(a*b);
                     break;
                 case 4:
-                    if (a==0 || b==0){
-                        System.out.println("Error");}
-                    else{
-                        System.out.println(a/b);}
+                    if (a==0 || b==0)
+                        System.out.println("Error");
+                    else
+                        System.out.println(a/b);
                     break;
                 default:
                     System.out.println("Option not found");
+                    break;
             }
         }
     }
