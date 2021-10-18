@@ -111,12 +111,12 @@ import java.util.regex.*;
 
 public class Staircase_Problem{
     static int stepPerms(int n) {
-        if(n==1 || n==0){
-            return 1;} 
-        else if(n==2){
-            return 2;}
-        else{
-            return stepPerms(n-1)+ stepPerms(n-2) + stepPerms(n-3);}
+        if(n==1 || n==0)
+            return 1;
+        else if(n==2)
+            return 2;
+        else
+            return (stepPerms(n-1)+ stepPerms(n-2) + stepPerms(n-3));
     }
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
