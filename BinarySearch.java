@@ -40,10 +40,7 @@ public class BinarySearch{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); 
         int n = scan.nextInt();
-        int index=-1;
-        int middle;
-        int first;
-        int last;
+        int index=-1,middle,first,last;
         int[] a= new int[100]; 
         for(int i=0;i<n;i++){
             a[i]=scan.nextInt();}
@@ -64,10 +61,10 @@ public class BinarySearch{
             if(x==a[middle]){
                 index=middle;
                 break;}
-            else if(x>a[middle]){
-                first=middle+1;}
-            else{
-                last=middle-1;}
+            else if(x>a[middle])
+                first=middle+1;
+            else
+                last=middle-1;
        }
        System.out.println(index);
    }
