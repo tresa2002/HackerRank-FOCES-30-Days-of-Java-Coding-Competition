@@ -52,13 +52,11 @@ public class IfElse_2{
         int n = scan.nextInt();
         scan.close();
         if(n>=0 && n<=100){
-            if(n%5==0){
+            if(n%5==0)
                 System.out.println("divisible by 5");
-            }
         }
-        if(n<0 && n>=-100){
+        if(n<0 && n>=-100)
             System.out.println("negative");
-        }
         
     }
 }
