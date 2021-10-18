@@ -68,8 +68,8 @@ public class Subarray{
             int sum = 0;
             for(int j=i;j<n;j++){
                 sum += a[j];
-                if(sum < 0){
-                    c++;}
+                if(sum < 0)
+                    c++;
             }
         }
         System.out.println(c);
