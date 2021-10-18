@@ -40,9 +40,8 @@ public class Matrix_Diagonal_Elements{
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); 
-        int n = scan.nextInt(); 
-        long d1 = 0; 
-        long d2 = 0;
+        int n = scan.nextInt(); //Taking User Input
+        long d1 = 0,d2=0;
         int[][] a = new int[n][n];
         for(int i=0;i<n;i++){ 
             for(int j=0;j<n;j++){ 
