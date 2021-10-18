@@ -58,14 +58,14 @@ public class BinaryToDecimal{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); 
         String s = scan.nextLine();
-        int sum = 0; 
-        int x = 0; 
+        int sum = 0,x=0; 
         int i = s.length()-1;
         while(i>=0 && x<s.length()){ 
-            if(s.charAt(x) == '1'){
-                sum+=(int)Math.pow(2,i);}
+            if(s.charAt(x) == '1')
+                sum+=(int)Math.pow(2,i);
             i--;
-            x++;}
+            x++;
+        }
         System.out.println(sum);
     }
 }
